@@ -12,6 +12,7 @@
 		DB70F296217298BD008A87ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB70F294217298BD008A87ED /* Main.storyboard */; };
 		DB70F298217298BE008A87ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB70F297217298BE008A87ED /* Assets.xcassets */; };
 		DB70F29B217298BE008A87ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB70F299217298BE008A87ED /* LaunchScreen.storyboard */; };
+		DB70F2AB2172F5D5008A87ED /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DB70F2AA2172F5D5008A87ED /* FlowerClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DB70F297217298BE008A87ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB70F29A217298BE008A87ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB70F29C217298BE008A87ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB70F2AA2172F5D5008A87ED /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DB70F297217298BE008A87ED /* Assets.xcassets */,
 				DB70F299217298BE008A87ED /* LaunchScreen.storyboard */,
 				DB70F29C217298BE008A87ED /* Info.plist */,
+				DB70F2AA2172F5D5008A87ED /* FlowerClassifier.mlmodel */,
 			);
 			path = WhatFlower;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB70F2AB2172F5D5008A87ED /* FlowerClassifier.mlmodel in Sources */,
 				DB70F293217298BD008A87ED /* ViewController.swift in Sources */,
 				DB70F291217298BD008A87ED /* AppDelegate.swift in Sources */,
 			);
@@ -220,6 +224,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -274,6 +279,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -284,6 +290,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92S6VPY8H9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhatFlower",
+				);
 				INFOPLIST_FILE = WhatFlower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.azurehorsecreations.WhatFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,6 +312,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92S6VPY8H9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhatFlower",
+				);
 				INFOPLIST_FILE = WhatFlower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +323,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.azurehorsecreations.WhatFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
