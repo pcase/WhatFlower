@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
-        imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
     }
 
